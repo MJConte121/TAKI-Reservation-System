@@ -1,0 +1,215 @@
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+	url(second.jpg);
+	background-size: cover;
+	
+}
+h1{
+	text-align: right;
+	color: #fff;
+	position: absolute;
+  	top: 8px;
+  	left: 16px;
+  	font-size: 28px;
+}
+
+a{
+	text-align: right;
+	color: white;
+	position: absolute;
+  	top: 8px;
+  	right: 16px;
+  	font-size: 28px;
+
+}
+.reservation-form-box{
+	border-radius: 15px;
+	max-width: 350px;
+	border: 1px solid #ced4da;
+	margin: 10% auto;
+	background: white;
+
+}
+.radio-btn
+{
+	margin: 0 20px;
+	color: white;
+}
+.radio-btn .btn
+{
+	margin: 20px 10px 20px 0;
+	box-shadow: none;
+}
+.radio-btn .btn::after
+{
+	content:'';
+	height: 15px;
+	width: 15px;
+	top: -2px;  
+	left: -1px;
+	background-color: red;
+	position: relative;
+	display: inline-block;
+	border: 3px solid white;
+	visibility: visible;
+	border-radius: 80%;
+}
+.radio-btn .btn:checked::after
+{
+	content:'';
+	background-color: black;
+	transition: 0.5s;
+
+}
+.radio-btn span
+{
+	color: black;
+	margin-right: 15px;
+	font-size: 12px;
+}
+.booking-form
+{
+	padding: 0 20px 20px;
+}
+.booking-form label
+{
+
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: black;
+}
+input::placeholder
+{
+	color: black !important;
+}
+.input-grp
+{
+	width: 151px;
+	display: inline-block;
+}
+.form-control{
+	font-size: 12px !important;
+	border-radius: 0 !important;
+	color: black !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+.select-date:: -webkit-inner-spin-button,
+.select-date:: -webkit-outer-spin-button
+{
+	-webkit-appearance: none;
+	margin: 0;
+}
+.select-date:: -webkit-calendar-picker-indicator{
+	background: transparent !important;
+}
+.custom-select
+{
+	color: black !important;
+	font-size: 12px !important;
+	border: 1px solid #ced4da !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+}
+.custom-select option
+{
+	color: #333;
+}
+.travel
+{
+	width: 100% !important;
+	padding: 9px 0 !important;
+	font-size: 12px !important;
+	border: 1px solid #ced4da !important;
+	background: black !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;	
+}
+.travel:hover
+{
+	background: black !important;
+	color: black !important;	
+	transition: 0.5s;
+
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: center; /* Stay in place */
+  z-index: 50; /* Sit on top */
+  left: 10;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  align-items: center;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 60%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: left;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 4px;
+  background-color: black;
+  color: black;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: white;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
